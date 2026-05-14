@@ -1,0 +1,2 @@
+﻿{\n  "version": 1,\n  "projects": {\n    "apps": {\n      "root": "apps",\n      "sourceRoot": "apps",\n      "projectType": "application",\n      "targets": {}\n    },\n    "packages": {\n      "root": "packages",\n      "sourceRoot": "packages",\n      "projectType": "library",\n      "targets": {}\n    }\n  }\n}\n
+

@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "nx": "nx",
+    "build": "nx build",
+    "test": "nx test",
+    "lint": "nx lint",
+    "affected:build": "nx affected:build",
+    "affected:test": "nx affected:test"
+  },
+  "devDependencies": {
+    "@nrwl/workspace": "^19.8.4",
+    "nx": "19.8.4"
+  }
+}
