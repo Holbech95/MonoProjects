@@ -21,6 +21,8 @@ Run it once from this repository in a coding agent that supports Agent Skills:
 
 Review and confirm the proposed setup before it writes files. The skill detects this repo’s GitHub remote and recommends GitHub Issues for tracking; it also checks for monorepo structure when suggesting a domain-doc layout. Setup files are written under `docs/agents/`, with a short pointer added to the existing `AGENTS.md` or `CLAUDE.md` (if present). Commit the generated configuration so it is shared with the repo. See the [upstream skills repository](https://github.com/mattpocock/skills) for the full collection and installation/update instructions.
 
+The upstream skill directories are vendored under `.agents/skills/` (38 skills, including beta `in-progress` and frozen `misc` skills) at commit `f3fc5632f401156837ee3872f14fe33ccf1024ea`. Invoke a skill by its name using the syntax supported by your coding agent (for example, `grill-me`). The upstream collection is MIT-licensed; its license is at `.agents/skills/MATT-POCOCK-SKILLS-LICENSE`. To update, review upstream changes and sync from [mattpocock/skills](https://github.com/mattpocock/skills), preserving this repo's existing `setup-matt-pocock-skills` copy and checking for newly added skill-name collisions.
+
 ## Adding a project
 1. Create a directory under `apps/` or `packages/`.
 2. Add a README with purpose and usage.
