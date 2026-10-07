@@ -9,6 +9,18 @@ MonoProjects is a personal monorepo that collects projects, prototypes, librarie
 - `apps/` — runnable applications; each app lives in its own subfolder with its own README and run instructions.
 - `packages/` — reusable libraries, components, or tools intended for sharing across apps.
 
+## Matt Pocock agent skill
+
+This repository includes Matt Pocock’s [`setup-matt-pocock-skills`](.agents/skills/setup-matt-pocock-skills/SKILL.md) skill. It configures repo-specific guidance for issue tracking, triage labels (when the triage skill is installed), and domain documentation.
+
+Run it once from this repository in a coding agent that supports Agent Skills:
+
+```text
+/setup-matt-pocock-skills
+```
+
+Review and confirm the proposed setup before it writes files. The skill detects this repo’s GitHub remote and recommends GitHub Issues for tracking; it also checks for monorepo structure when suggesting a domain-doc layout. Setup files are written under `docs/agents/`, with a short pointer added to the existing `AGENTS.md` or `CLAUDE.md` (if present). Commit the generated configuration so it is shared with the repo. See the [upstream skills repository](https://github.com/mattpocock/skills) for the full collection and installation/update instructions.
+
 ## Adding a project
 1. Create a directory under `apps/` or `packages/`.
 2. Add a README with purpose and usage.
